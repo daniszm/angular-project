@@ -1,0 +1,53 @@
+.element {
+    display: inline-block;
+    padding: 3rem;
+    margin: 1rem;
+    border: 1px solid grey;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.element-header {
+    padding-bottom: 20px;
+    font-size: 2.3rem;
+    margin: 10px 0 0 0;
+}
+
+.element-subheader {
+    text-align: left;
+    font-size: 1.8rem;
+    margin: 10px 0 0 0;
+}
+
+.element-image {
+    width: 15rem;
+    height: auto;
+}
+
+.element-bar {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    height: 15px;
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+.element-health-status, .element-activeshiels-status {
+    background-color: #46E800;
+    height: 15px;
+}
+
+.element-activeweapons-status {
+    padding-top: 5px;
+    width: 30px;
+    height: auto;
+}
+
+.property-state {
+    display: inline-block;
+    opacity: 0.15;
+}
+
+.active {
+    opacity: 1;
+}

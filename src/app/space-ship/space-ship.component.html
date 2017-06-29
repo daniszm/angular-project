@@ -1,0 +1,18 @@
+<div class="element">
+  <h3 class="element-header">{{spaceShip.modelName}}</h3>
+  <img [src]="spaceShip.imageUrl" class="element-image">
+  <h4 class="element-subheader">Life:</h4>
+  <div class="element-bar">
+    <div class="element-health-status" [style.width.%]="spaceShip.health" [title]="spaceShip.health + '%'"></div>
+  </div>
+  <div class="property-state"
+             [class.active]="spaceShip.activeShields"
+             [title]="'Shields ' + (spaceShip.activeShields ? 'active' : 'inactive')">
+    <img [src]="spaceShip.shieldImageUrl" class="element-activeweapons-status">
+  </div>
+  <div class="property-state"
+             [class.active]="spaceShip.activeWeapon"
+             [title]="'Weapons ' + (spaceShip.activeWeapons ? 'active' : 'inactive')">
+    <img [src]="spaceShip.weaponImageUrl" class="element-activeweapons-status">
+  </div>
+</div>
